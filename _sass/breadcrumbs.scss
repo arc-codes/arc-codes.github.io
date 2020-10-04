@@ -1,0 +1,85 @@
+.breadcrumbs {
+
+    ul {
+        list-style: none;
+        overflow: hidden;
+        padding: 0;
+
+        li { 
+            float: left;
+
+            a {
+                color:white;
+                text-decoration: none;
+                padding: 0px 0 0px 45px;
+                background: #83ce2c;
+                background: #83ce2c;
+                position: relative;
+                display: block;
+                float: left
+            }
+
+            a::after {
+                content: " ";
+                display: block;
+                width: 0;
+                height: 0;
+                border-top: 50px solid transparent;
+                border-bottom: 50px solid transparent;
+                border-left: 30px solid #83ce2c;
+                position: absolute;
+                top: 50%;
+                margin-top: -50px;
+                left: 100%;
+                z-index: 2
+            }
+
+            a::before {
+                content: " ";
+                display: block;
+                width: 0;
+                height: 0;
+                position: absolute;
+                top: 50%;
+                margin-top: -50px;
+                margin-left: 2px;
+                left: 100%;
+                z-index: 1
+            }            
+        }
+
+        li:first-child a { padding-left: 10px; }
+        li:nth-child(2) a { background: #9cda53; }
+        li:nth-child(2) a:after { border-left-color: #9cda53; }
+        li:nth-child(3) a { background: #b4e37d; }
+        li:nth-child(3) a:after { border-left-color: #b4e37d; }
+        li:nth-child(4) a { background: #cceca7; }
+        li:nth-child(4) a:after { border-left-color: #cceca7; }
+        li:nth-child(5) a { background: #e4f5d1; }
+        li:nth-child(5) a:after { border-left-color: #e4f5d1; }
+        li:last-child a { pointer-events: none; cursor: default; }
+        li a:hover { background: #68a423; }
+        li a:hover:after { border-left-color: #68a423 !important; }
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .breadcrumbs {
+        font-size:11.8575px
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .breadcrumbs li a {
+        padding:0px 0 0px 30px
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .breadcrumbs li a::after {
+        border-left:20px solid #83ce2c
+    }
+}
