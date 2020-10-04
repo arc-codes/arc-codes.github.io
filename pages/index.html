@@ -31,7 +31,7 @@ layout: home
                     <div class="col-lg-5">
                         {% if post.feature_youtube_video_id %}
                         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/{{ post.feature_youtube_video_id }}" frameborder="0" allow=" " allowfullscreen></iframe>
-                        {% else if post.feature_image_url %}
+                        {% elsif post.feature_image_url %}
                         <div class="img-cover" style="background-image: url('{{post.feature_image_url}}');"></div>
                         {% endif %}
                     </div>
@@ -50,7 +50,7 @@ layout: home
             <article class="{{ post.color | default: 'clear' }}-article card mb-5">
                 {% if post.feature_youtube_video_id %}
                 <iframe width="100%" height="350px" src="https://www.youtube.com/embed/{{ post.feature_youtube_video_id }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                {% else if post.feature_image_url %}
+                {% elsif post.feature_image_url %}
                 <div class="img-cover" style="background-image: url('{{post.feature_image_url}}');"></div>
                 {% endif %}
 
