@@ -34,6 +34,19 @@ footer
 
 section
 {
+  .author-info
+  {
+
+    
+    color: #a6a9ac;
+    .list-group-item {
+      color: #a6a9ac;
+    }
+    h3 {
+      color: #444;
+    }
+  }
+
   article, .card
   {
     border-radius: 0px;
@@ -58,6 +71,13 @@ section
     }
   }
 
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
 
 
