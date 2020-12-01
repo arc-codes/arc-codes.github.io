@@ -1,6 +1,7 @@
 ---
 title: Getting started with Emscripten and Docker
 layout: post
+author: Aaron Cox
 excerpt: "Setting up emscripten to build C++ for web can be a real pain, in this post we show how this can be done easily via docker"
 ---
 

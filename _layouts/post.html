@@ -2,29 +2,33 @@
 layout: default
 ---
 
+
 {% include breadcrumbs.html %}
 
-{% if page.no-title %}
-    <!-- no title -->    
-{% else %}
-    <h1 style="margin-bottom: -10px;">{{ page.title }}</h1>
-    <small style="font-size: small">{{ page.date | date_to_string }} - {{ page.author }}</small>
-    
-{% endif %}
-
-
-
 <div class="row">
-    <div class="col-lg-9 col-xs-12">
-        <section class="mt-4">
+    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-xs-12">
+        {% include author_aside.html %}
+    </div>
+    <div class="col-xl-7 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+        <section>
             <article class="card mb-4">
+
+                
+
                 <div class="card-body markdown">
+
+                    {% if page.no-title %}
+                        <!-- no title -->    
+                    {% else %}
+                    <div class="mb-4 mt-4">
+                        <h1>{{ page.title }}</h1>
+                        <small style="font-size: small">{{ page.date | date_to_string }} - {{ page.author }}</small>
+                    </div>
+                    {% endif %}
+
                     {{ content }}
                 </div>
             </article>
         </section>
-    </div>
-    <div class="col-lg-3">
-        {% include author_aside.html %}
     </div>
 </div>

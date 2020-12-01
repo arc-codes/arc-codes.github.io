@@ -1,14 +1,13 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
-date:   2020-09-06 02:33:23 -0500
 # categories: jekyll
-color: red
-author: aaron cox
+# color: red
+author: Aaron Cox
 excerpt: "An example page showcasing various markdown features and styles"
 # feature_youtube_video_id: "-b7cgdkBpPE"
 feature_image_url: "https://via.placeholder.com/600x250"
-feature_layout: top
+feature_layout: left
 ---
 
 # H1 Heading
