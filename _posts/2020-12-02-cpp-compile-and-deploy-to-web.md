@@ -1,5 +1,5 @@
 ---
-title: C++ Compile and deply to web with Docker and Github Actions
+title: Compile and deploy C++ to web with Docker and Github Actions
 layout: post
 author: Aaron Cox
 excerpt: "In this post, I will show you how I set up a C++ project with CMake and Visual Studio. We will compile to Javascript with Emscripten and Docker. Finally, we will automate the build and deploy with Github Actions."
@@ -159,7 +159,7 @@ To achieve this, we will need to create a new empty Repository on Github and pus
 Here's a quick walkthrough for the remaining steps, or continue reading below.
 
 <div class="video-container">
-<iframe class="auto-height-video" src="https://www.youtube.com/embed/BX6wDVBKqkI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="auto-height-video" src="https://www.youtube.com/embed/aWw-LFLBlrc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 To Get started we will first need to add add a `.gitignore` file to our project.
@@ -233,5 +233,5 @@ You can view the actions progress via the "Actions" navigation tab.
 ### **Enable Github Pages**
 Finally, navigate to your project settings. scroll down to `Github Pages` and choose `gh-pages` branch then save.
 
-### **CONGRADULATIONS**
-Your compiled C++ project has now been build and deploy.
+### **Done**
+We're Done. A Simple HelloWorld C++ project Compiled and Deployed to Github pages with Github Actions. Although this was a simple "Hello World" project it has set the ground work for future projects to be created and deployed.
